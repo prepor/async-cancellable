@@ -1,0 +1,7 @@
+description = "Core/Async helper to declare cancellable deferreds and compose them"
+version = "%%VERSION_NUM%%"
+requires = "core async"
+archive(byte) = "cancellable.cma"
+archive(native) = "cancellable.cmxa"
+plugin(byte) = "cancellable.cma"
+plugin(native) = "cancellable.cmxs"

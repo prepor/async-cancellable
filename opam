@@ -1,0 +1,21 @@
+opam-version: "1.2"
+maintainer: "Andrew Rudenko <ceo@prepor.ru>"
+authors: ["Andrew Rudenko <ceo@prepor.ru>"]
+homepage: "https://github.com/prepor/cancellable"
+doc: "https://prepor.github.io/cancellable/doc"
+license: "ISC"
+dev-repo: "https://github.com/prepor/cancellable.git"
+bug-reports: "https://github.com/prepor/cancellable/issues"
+tags: []
+available: [ ocaml-version >= "4.01.0"]
+depends: [
+  "core"
+  "async"
+  "ocamlfind" {build}
+  "ocamlbuild" {build}
+  "ppx_let" {build}
+  "topkg" {build} ]
+depopts: []
+build: [
+  "ocaml" "pkg/pkg.ml" "build"
+          "--pinned" pinned ]

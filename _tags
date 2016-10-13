@@ -1,0 +1,4 @@
+true : bin_annot, safe_string, thread, package(bytes, core, async, ppx_let)
+
+<src> : include
+<test/*> : package(ppx_expect.evaluator), ppx-driver(ppx_let+ppx_inline_test+ppx_expect+ppx_sexp_message -inline-test-lib cancellable)
